@@ -20,6 +20,9 @@ SampleApp::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # Initialise js and css files.
+  config.assets.precompile += %w( *.css *.js )
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
